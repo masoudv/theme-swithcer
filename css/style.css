@@ -1,0 +1,138 @@
+.theme-light {
+    --color-bg: #eef2f5;
+    --color-main: #FFF;
+    --side-nav: #57595b;
+    --color-accent: var(--yellow-color);
+    --yellow-color: #ffab00;
+    --main-font: var(--color-main);
+    --footer-color: var(--side-nav);
+    --font-color-primary: #212121;
+    --font-color-secondary: var(--side-nav);
+    --bg-lightbox: var(--side-nav);
+}
+
+.theme-dark {
+    --color-bg: #031f35;
+    --color-main: #032540;
+    --side-nav: #042b4b;
+    --color-accent: #0c4f87;
+    --yellow-color: #ffab00;
+    --main-font: #FFF;
+    --footer-color: var(--main-font);
+    --font-color-primary: var(--main-font);
+    --font-color-secondary: var(--main-font);
+    --bg-lightbox: var(--side-nav);
+}
+
+header {
+    background: var(--color-bg);
+    color: var(--yellow-color);
+    height: 40px;
+    padding-top: 7px;
+}
+
+body {
+    background: var(--side-nav);
+    color: var(--main-font);
+}
+
+.background {
+    background: var(--color-bg);
+}
+
+/*
+Switch
+*/
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.col-xl-2.col-md-2.col-3.switchStyle {
+    float: left;
+    padding-top: 17px;
+}
+
+.switchStyle {
+    float: left;
+}
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #053358;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: -12px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background: url(../images/night.png) no-repeat center;
+}
+
+input:checked+.slider {
+    background-color: #eef2f5;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #eef2f5;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background: url(../images/sunny.png) no-repeat center;
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+footer {
+    background: var(--color-accent);
+    text-align: center;
+    height: 40px;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.copyright a {
+    color: var(--yellow-color);
+    text-decoration: none;
+}
