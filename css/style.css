@@ -2,8 +2,8 @@
     --color-bg: #eef2f5;
     --color-main: #FFF;
     --side-nav: #57595b;
-    --color-accent: var(--yellow-color);
-    --yellow-color: #ffab00;
+    --color-accent: #ffab00;
+    --yellow-color: #ffde9b;
     --main-font: var(--color-main);
     --footer-color: var(--side-nav);
     --font-color-primary: #212121;
@@ -26,7 +26,7 @@
 
 header {
     background: var(--color-bg);
-    color: var(--yellow-color);
+    color: var(--color-accent);
     height: 40px;
     padding-top: 7px;
 }
